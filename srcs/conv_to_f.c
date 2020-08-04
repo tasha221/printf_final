@@ -58,7 +58,7 @@ char		*make_f(t_lst *lst, va_list *val)
 		while (i < lst->precision)
 		{
 			sp *= 10;
-			buf[1][i++] = ((unsigned long long)sp % 10) + '0';
+			buf[1][i++] = ((int)sp % 10) + '0';
 		}
 		buf[0] = make_resf(buf[0], buf[1]);
 	}
@@ -85,8 +85,8 @@ char		*make_lf(t_lst *lst, va_list *val, int i)
 		while (i < lst->precision)
 		{
 			sp *= 10;
-			buf[1][i++] = ((unsigned long long)sp % 10) + '0';
-			sp -= (unsigned long long)(sp / 10) * 10;
+			buf[1][i++] = ((int)sp % 10) + '0';
+			sp -= (int)(sp);
 		}
 		buf[0] = make_resf(buf[0], buf[1]);
 	}

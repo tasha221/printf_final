@@ -69,12 +69,11 @@ void		ft_putstr2(char *s)
 	i = 0;
 	if (!s)
 		return ;
-	while (s[i])
+	while (*s)
 	{
 		if (*s == -1)
 			*s = 0;
-		ft_putchar(s[i]);
-		i++;
+		write(1, s++, 1);
 	}
 }
 

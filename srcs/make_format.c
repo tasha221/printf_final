@@ -76,9 +76,7 @@ void	make_format2(char *s, int i, t_lst *lst, va_list *val)
 	flags = " +-#0";
 	types = "cspdiouUxXf%";
 	if (s[i] == '.')
-	{
-		i = make_format3(i, s, lst, val);
-	}
+		i = make_format_add(i, s, lst, val);
 	if (ft_strchr(flags, s[i]))
 		make_flag(i + 1, s, lst, i);
 	if (!ft_strchr(types, s[i]))

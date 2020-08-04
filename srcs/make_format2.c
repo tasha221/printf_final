@@ -12,7 +12,7 @@
 
 #include "../includes/printf.h"
 
-int		make_format3(int i, char *s, t_lst *lst, va_list *val)
+int		make_format_add(int i, char *s, t_lst *lst, va_list *val)
 {
 	i++;
 	if (ft_isdigit(s[i]))

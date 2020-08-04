@@ -62,7 +62,7 @@ long double			ft_ldtoa_adder(int prec);
 void				make_width_f(char **tmp, t_lst *lst);
 char				*make_fl_f(char *tmp, t_lst *lst);
 void				make_zero(char **tmp);
-int					make_format3(int i, char *s, t_lst *lst, va_list *val);
+int					make_format_add(int i, char *s, t_lst *lst, va_list *val);
 int					make_int(char *s, int i);
 
 #endif

@@ -37,6 +37,7 @@ SRC = 			 conv_to_f.c \
       			 ft_itoau.c \
       			 ft_printf.c \
       			 make_format.c \
+      			 make_format2.c \
       			 make_out.c
 OBJ = $(patsubst %.c, %.o, $(SRC))
 HEADER = includes

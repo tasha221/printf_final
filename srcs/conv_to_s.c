@@ -47,8 +47,6 @@ void	make_width2(char **tmp, int width, char c)
 void	make_width(char **tmp, t_lst *lst, char c, int width)
 {
 	int		i;
-	int		j;
-	char	*buf;
 
 	if ((*tmp)[0] == 0)
 	{

@@ -75,5 +75,3 @@ clean:
 		make clean -C $(LIB_DIR)
 
 re: fclean all
-
-.PHONY: all fclean clean re
